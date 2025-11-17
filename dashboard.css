@@ -1,0 +1,82 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff5f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.dashboard-header {
+  background-color: #A74E35;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.logout-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+  color: #A74E35;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.logout-btn:hover {
+  background-color: #D2694C;
+  color: white;
+}
+
+.dashboard-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+}
+
+.dashboard-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.dashboard-card h3 {
+  color: #D2694C;
+  margin-bottom: 10px;
+}
+
+.btn {
+  background-color: #D2694C;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #D2694C;
+  transform: scale(1.05);
+}

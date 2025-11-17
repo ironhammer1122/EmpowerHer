@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login | EmpowerHer</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <div class="login-card">
+    <h2>User Login</h2>
+
+    <form id="loginForm">
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" id="loginEmail" placeholder="Enter your email" required>
+      </div>
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" id="loginPassword" placeholder="Enter your password" required>
+      </div>
+      <button type="submit" class="btn-submit">Login</button>
+    </form>
+
+    <p><a href="#">Forgot Password?</a></p>
+    <p>Don't have an account? <a href="sign_up.html">Sign Up</a></p>
+
+    <div class="divider">Or login with</div>
+
+    <button id="googleBtn" class="social-btn">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" alt="Google"> 
+      Google
+    </button>
+
+  </div>
+
+  <script type="module" src="user_login.js"></script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Seller Profile | EmpowerHer</title>
+  <link rel="stylesheet" href="seller_profile.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>Edit Profile 💼</h1>
+    <button id="logout-btn" class="logout-btn">Logout</button>
+  </header>
+
+  <main class="main-container">
+    <h2>Update Your Store Details</h2>
+    <form id="profile-form">
+      <label for="storeName">Store Name</label>
+      <input type="text" id="storeName" placeholder="Enter store name" required>
+
+      <label for="ownerName">Owner Name</label>
+      <input type="text" id="ownerName" placeholder="Enter your name" required>
+
+      <label for="email">Email (read-only)</label>
+      <input type="email" id="email" readonly>
+
+      <label for="phone">Phone Number</label>
+      <input type="text" id="phone" placeholder="Enter phone number" required>
+
+      <label for="upi">UPI ID</label>
+      <input type="text" id="upi" placeholder="Enter UPI ID" required>
+
+      <label for="address">Store Address</label>
+      <textarea id="address" placeholder="Enter your store address" rows="3" required></textarea>
+
+      <button type="submit">Update Profile</button>
+      <p id="status-msg"></p>
+    </form>
+  </main>
+
+  <script type="module" src="seller_profile.js"></script>
+</body>
+</html>

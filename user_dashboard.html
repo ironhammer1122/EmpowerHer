@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard | EmpowerHer</title>
+  <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+  <header class="dashboard-header">
+    <h1>Welcome, <span id="user-name">User</span> 🌸</h1>
+    <button id="logout-btn" class="logout-btn">Logout</button>
+  </header>
+
+  <section class="dashboard-container">
+    <div class="dashboard-card">
+      <h3>My Orders</h3>
+      <p>Track your recent purchases and view order details.</p>
+      <button id="view-orders-btn" class="btn">View Orders</button>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Wishlist</h3>
+      <p>See the products you’ve saved for later.</p>
+      <button class="btn">View Wishlist</button>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Profile Settings</h3>
+      <p>Update your account details and preferences.</p>
+      <button class="btn">Edit Profile</button>
+    </div>
+
+    <div class="dashboard-card">
+      <h3>Payment Methods</h3>
+      <p>Manage your saved UPI and card details.</p>
+      <button class="btn">Manage Payments</button>
+    </div>
+  </section>
+
+  <script type="module" src="dashboard_user.js"></script>
+</body>
+</html>

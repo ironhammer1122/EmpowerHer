@@ -1,0 +1,156 @@
+:root {
+  --terracotta: #e07a5f;
+  --terracotta-dark: #9a3e28;
+  --white: #ffffff;
+  --light-gray: #f3f3f3;
+  --dark-gray: #333;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--light-gray);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.login-card {
+  background: var(--white);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: var(--terracotta-dark);
+}
+
+.role-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.role-toggle button {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid var(--terracotta);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--terracotta-dark);
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.role-toggle button.active,
+.role-toggle button:hover {
+  background: var(--terracotta);
+  color: var(--white);
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.input-group label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+}
+.input-group input, 
+.input-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.btn-submit {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: var(--terracotta);
+  color: var(--white);
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn-submit:hover {
+  background: var(--terracotta-dark);
+}
+
+.hidden { display: none; }
+
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+.divider span {
+  background: var(--white);
+  padding: 0 10px;
+  position: relative;
+  z-index: 1;
+}
+.divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #ccc;
+  z-index: 0;
+}
+
+.social-signup button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; /* spacing between icon and text */
+  transition: 0.3s;
+}
+
+.social-signup button i {
+  font-size: 18px;
+}
+
+.social-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+  background: var(--white);
+  transition: 0.3s;
+  width: 100%;
+}
+.social-btn img {
+  width: 20px;
+  height: 20px;
+}
+
+.social-btn a:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-color: #2575fc;
+}

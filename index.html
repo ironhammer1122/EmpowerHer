@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EmpowerHer</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- FontAwesome for icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- Top tagline bar -->
+      <div class="top-bar">
+        <div class="header-quote">
+          <p class="tagline">Empowering Hands, Enriching Homes</p>
+        </div>
+      </div>
+
+      <!-- Middle bar with logo, nav, search, account/cart -->
+      <div class="middle-bar">
+        <div class="logo">
+          <img src="Empower-Her.png" alt="EmpowerHer Logo" />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+          <a href="#categories"><i class="fa-solid fa-list"></i> Categories</a>
+        </nav>
+
+        <!-- Search bar -->
+        <form action="#shop" method="get" class="search-bar">
+          <select name="category">
+            <option>All</option>
+            <option>Jewelry</option>
+            <option>Home Decor</option>
+            <option>Clothing</option>
+            <option>Food</option>
+          </select>
+          <input id="q" name="q" type="search" placeholder="Search products..." />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+
+        <!-- 🧡 Account section dynamically handled by main.js -->
+        <div class="account-cart"></div>
+      </div>
+
+      <!-- Bottom category bar -->
+      <div class="bottom-bar">
+        <a href="#shop">Shop</a>
+        <a href="#categories">Handmade Jewelry</a>
+        <a href="#categories">Home Decor</a>
+        <a href="#categories">Clothing</a>
+        <a href="#categories">Food</a>
+      </div>
+    </header>
+
+    <hr />
+
+    <!-- Hero section -->
+    <section id="hero" aria-label="Hero">
+      <div class="hero-overlay">
+        <h2>Empowering Hands, Enriching Homes</h2>
+        <p>
+          Discover handmade jewelry, home decor, clothing, and food products by
+          rural women artisans.
+        </p>
+        <a href="#shop" class="btn-hero">Shop Now</a>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Categories -->
+    <section id="categories" aria-label="Shop by Categories">
+      <h2>Shop By Categories</h2>
+      <div class="category-grid">
+        <div class="category-card">
+          <i class="fa-solid fa-gem"></i>
+          <p>Handmade Jewelry</p>
+        </div>
+        <div class="category-card">
+          <i class="fa-solid fa-couch"></i>
+          <p>Home Decor</p>
+        </div>
+        <div class="category-card">
+          <i class="fa-solid fa-shirt"></i>
+          <p>Clothing</p>
+        </div>
+        <div class="category-card">
+          <i class="fa-solid fa-bowl-food"></i>
+          <p>Food</p>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <!-- Products -->
+    <main id="shop" aria-label="Product Listing">
+      <h2>Featured Products</h2>
+      <div class="products-row">
+        <div class="product-card">
+          <img src="https://i.postimg.cc/j5P17QKP/harshad-khandare-JNGQd-Uc-Fr-Cc-unsplash.jpg" alt="Terracotta bowl" />
+          <h3>Mango Pickle</h3>
+          <p class="price">₹249</p>
+        </div>
+        <div class="product-card">
+          <img src="https://i.postimg.cc/wB4Nx9zm/vanessa-serpas-ep-Unuo-Ll8es-unsplash.jpg" alt="Clay Pot" />
+          <h3>Clay Pot</h3>
+          <p class="price">₹200</p>
+        </div>
+        <div class="product-card">
+          <img src="https://i.postimg.cc/P5PTsHSR/04a-patola-cotton-saree-1.jpg" alt="Patola Cotton Saree" />
+          <h3>Patola Cotton Saree</h3>
+          <p class="price">₹2999</p>
+        </div>
+        </div>
+
+      <div class="view-more">
+        <a href="products.html" class="btn-view-more">View All Products</a>
+      </div>
+    </main>
+
+    <hr />
+
+    <!-- About -->
+    <section id="about" aria-label="About Us">
+      <h2>About Us</h2>
+      <p>
+        EmpowerHer is an initiative to connect rural women artisans with the
+        world. By shopping here, you support sustainable livelihoods and empower
+        women to grow their businesses from their homes.
+      </p>
+    </section>
+
+    <hr />
+
+    <!-- Chatbot -->
+<div id="chatbot-container">
+  <button id="chatbot-btn"><i class="fa-solid fa-comments"></i></button>
+  <div id="chatbot-box">
+    <iframe 
+      src="https://rushi9995-chatbot-for-empowerher.hf.space/" 
+      title="EmpowerHer Chatbot"
+      allow="microphone; camera">
+    </iframe>
+  </div>
+</div>
+
+<script>
+  // Chatbot toggle logic
+  const chatBtn = document.getElementById("chatbot-btn");
+  const chatBox = document.getElementById("chatbot-box");
+
+  chatBtn.addEventListener("click", () => {
+    chatBox.classList.toggle("show");
+  });
+</script>
+
+
+    <hr />
+
+    <!-- Footer -->
+    <footer aria-label="Site Footer">
+      <nav aria-label="Footer">
+    </footer>
+
+    <script type="module" src="main.js"></script>
+ 
+  </body>
+</html>

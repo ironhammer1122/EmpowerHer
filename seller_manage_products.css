@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@400;700&display=swap');
+
+:root {
+  --terracotta: #D2694C;
+  --terracotta-dark: #A74E35;
+  --beige: #EAC7A4;
+  --light-bg: #f9f9f9;
+  --text-dark: #333;
+  --white: #fff;
+}
+
+body {
+  background: var(--light-bg);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  color: var(--text-dark);
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--terracotta);
+  color: var(--white);
+  padding: 15px 25px;
+}
+
+.logout-btn {
+  background: var(--white);
+  color: var(--terracotta-dark);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background: var(--beige);
+}
+
+.main-container {
+  max-width: 900px;
+  margin: 30px auto;
+  background: var(--white);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+}
+
+h2 {
+  font-family: 'Playfair Display', serif;
+  color: var(--terracotta-dark);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.product-list {
+  display: grid;
+  gap: 15px;
+}
+
+.product-card {
+  border: 1px solid var(--beige);
+  border-radius: 10px;
+  padding: 15px;
+  background: var(--light-bg);
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  background: var(--beige);
+  transform: scale(1.01);
+}
+
+.product-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--terracotta-dark);
+  font-weight: 600;
+}
+
+.product-status {
+  color: var(--terracotta);
+  font-weight: bold;
+}

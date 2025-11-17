@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | EmpowerHer</title>
+  <link rel="stylesheet" href="products.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1><i class="fa-solid fa-store"></i> Explore Our Products</h1>
+    <a href="cart.html" class="cart-link">
+      <i class="fa-solid fa-cart-shopping"></i> View Cart
+    </a>
+  </header>
+
+  <main>
+    <section class="filters">
+      <select id="filterCategory">
+        <option value="all">All Categories</option>
+        <option value="Handmade Jewelry">Handmade Jewelry</option>
+        <option value="Home Decor">Home Decor</option>
+        <option value="Clothing">Clothing</option>
+        <option value="Food">Food</option>
+        <option value="Handicraft">Handicraft</option>
+      </select>
+      <button id="filterButton">Filter</button>
+    </section>
+
+    <section class="product-grid" id="productList">
+      <!-- Products from Firebase will appear here -->
+    </section>
+  </main>
+
+  <!-- Firebase and JS -->
+  <script type="module" src="products.js"></script>
+</body>
+</html>

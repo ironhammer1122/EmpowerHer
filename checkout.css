@@ -1,0 +1,42 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
+  color: #3a1d15;
+  text-align: center;
+  margin: 0;
+  padding: 40px;
+}
+
+.checkout-container {
+  max-width: 400px;
+  margin: auto;
+  background: rgba(255,239,233,0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h2 {
+  color: #a74e35;
+  margin-bottom: 20px;
+}
+
+.summary p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.pay-btn {
+  background-color: #d2694c;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s ease;
+}
+
+.pay-btn:hover {
+  background-color: #a74e35;
+}
