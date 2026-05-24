@@ -131,10 +131,13 @@ OR use the VS Code Live Server extension.
 ### 📸 Screenshots
 -🏠 Home Page
 <img width="1901" height="1085" alt="Screenshot 2026-05-09 111051" src="https://github.com/user-attachments/assets/8ca1fa00-b797-4001-871a-887b4331c015" />
+
 -🛒 Product Page
 <img width="1918" height="1091" alt="Screenshot 2026-05-09 111201" src="https://github.com/user-attachments/assets/622ce1f5-d5ad-40c0-a229-4e99ef85bbca" />
+
 -👤 User Dashboard
 <img width="1918" height="1091" alt="Screenshot 2026-05-09 111421" src="https://github.com/user-attachments/assets/a4dcfcdb-aded-4c3f-acbd-49373966c21d" />
+
 -🛍️ Seller Dashboard
 <img width="1918" height="1091" alt="Screenshot 2026-05-09 111525" src="https://github.com/user-attachments/assets/4d592723-069f-4158-8b90-1f5d961d7feb" />
 
