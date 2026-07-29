@@ -153,8 +153,8 @@ If you'd like to improve the project:
 
 ---
 
-### 👨‍💻 Author
-IRONHAMMER
+### 👨‍💻 Developer
+IRONHAMMER aka YASH SARATE
 
 ---
 
